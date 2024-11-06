@@ -88,12 +88,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #587c7e;
     color: #333;
 }
 
 header {
-    background: #049c09;
+    background: #50975c;
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -105,7 +105,9 @@ header {
 
 nav ul {
     list-style: none;
-    padding: 0;
+    padding: 25px;
+    background-color: #252525;
+    margin-bottom: -25px;
 }
 
 nav ul li {
@@ -114,8 +116,13 @@ nav ul li {
 }
 
 nav a {
-    color: white;
+    color: #faf4f5;
     text-decoration: none;
+}
+nav a:hover{
+    color: #3b141c;
+    background-color: #f3961c;
+    padding: 15px;
 }
 
 .hero {
@@ -147,11 +154,36 @@ main {
 }
 
 section {
-    background:rgb(10, 148, 148) ;
+    background:rgb(247, 255, 255) ;
     margin: 20px 0;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .column {
+        flex: 1;
+        min-width: 250px;
+        max-width: 300px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+    }
+    .column h3 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .column ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    .column li {
+        margin-bottom: 10px;
+    }
 }
 
 .book {
@@ -270,39 +302,38 @@ footer {
         color: #ffffff;
     }
 
-    /* Media Queries */
     @media (max-width: 768px) {
         .footer-container {
-            flex-direction: column; /* Stack sections vertically on smaller screens */
-            align-items: center; /* Center align items */
+            flex-direction: column; 
+            align-items: center; 
         }
 
         .footer-section {
-            margin: 10px 0; /* Reduce margin for stacked sections */
-            text-align: center; /* Center text in sections */
+            margin: 10px 0; 
+            text-align: center; 
         }
 
         .footer-section .newsletter input[type="email"] {
-            width: 90%; /* Increase width of input on smaller screens */
+            width: 90%; 
         }
     }
 
     @media (max-width: 480px) {
         .footer-section h3 {
-            font-size: 16px; /* Reduce heading size on very small screens */
+            font-size: 16px;
         }
 
         .footer-section p, .footer-section ul, .footer-section form {
-            font-size: 12px; /* Reduce font size for better readability */
+            font-size: 12px; 
         }
 
         .footer-bottom {
-            font-size: 12px; /* Adjust bottom footer text size */}
+            font-size: 12px; }
 }
 
 }
 
-/* Responsive Design */
+
 @media (max-width: 600px) {
     nav ul li {
         display: block;
