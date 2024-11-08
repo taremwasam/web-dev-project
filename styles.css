@@ -82,6 +82,10 @@ section {
         gap: 20px;
        
     }
+    .container {
+        display: flex;
+        justify-content: center;
+    }
     .column {
         flex: 1;
         min-width: 250px;
@@ -89,11 +93,14 @@ section {
         padding: 20px;
         border: 1px solid #ddd;
         border-radius: 8px;
+        background-color: darkturquoise;
+        color: black;
         
     }
     .column h3 {
         text-align: center;
         margin-bottom: 10px;
+        color: white;
     }
     .column ul {
         list-style-type: none;
